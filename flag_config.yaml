@@ -1,0 +1,11 @@
+# Flag thresholds for SPX options data quality checks.
+# Adjust these values to tune sensitivity.
+
+wide_spread_abs: 5.0          # absolute spread in dollars
+wide_spread_pct: 0.20         # spread / mid_price  (20%)
+iv_extreme_high: 5.0          # implied vol (500%)
+iv_extreme_low: 0.05          # implied vol (5%)
+deep_otm_lower: 0.85          # moneyness below this = deep OTM put / deep ITM call
+deep_otm_upper: 1.15          # moneyness above this = deep ITM put / deep OTM call
+near_expiry_dte: 1            # DTE threshold for near-expiry flag
+near_expiry_spread_pct: 0.10  # spread_pct threshold when near expiry (10%)
