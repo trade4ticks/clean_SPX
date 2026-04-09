@@ -29,7 +29,7 @@ log = logging.getLogger(__name__)
 
 # Allow processing up to 16:05 to catch the final bar
 _OPEN_TIME = time(9, 35)
-_CLOSE_TIME = time(16, 5)
+_CLOSE_TIME = time(17, 0)
 
 
 def main() -> None:
